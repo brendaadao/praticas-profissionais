@@ -62,7 +62,8 @@ Daniel Azulay – TIA: 41623290
   ![caso de uso](https://github.com/brendaadao/praticas-profissionais/blob/master/Fluxo%20principal.PNG)
  
  
- 
+  
+  ![caso de uso](https://github.com/brendaadao/praticas-profissionais/blob/master/Fluxo%20Alternativo.PNG)
  
  
  
