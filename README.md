@@ -45,7 +45,7 @@ Daniel Azulay – TIA: 41623290
 # Caso de Uso
 
 
-![caso de uso](https://github.com/brendaadao/praticas-profissionais/blob/master/usecase.png)
+![caso de uso](https://github.com/brendaadao/praticas-profissionais/blob/master/caso%20de%20uso.png)
 
 
 
