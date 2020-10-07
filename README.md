@@ -53,13 +53,13 @@ Daniel Azulay – TIA: 41623290
  
  ##  Casos de Uso – Contratante
  
-##  Caso de Uso – Cadastrar no Aplicativo
+###  Caso de Uso – Cadastrar no Aplicativo
  
  
+ ![caso de uso](https://github.com/brendaadao/praticas-profissionais/blob/master/Caso%20de%20uso%20-%20cadastrar%20no%20aplicativo.PNG)
  
  
- 
- 
+  ![caso de uso](https://github.com/brendaadao/praticas-profissionais/blob/master/Fluxo%20principal.PNG)
  
  
  
