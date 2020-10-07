@@ -19,13 +19,19 @@ Daniel Azulay – TIA: 41623290
 
 ## Requisitos Funcionais
 
+
 IDENTIFICADOR	DESCRIÇÃO
+
+
 
 ![requisitos funcionais](https://github.com/brendaadao/praticas-profissionais/blob/master/image.png)
 
 # Requisitos Não Funcionais
 
+
 IDENTIFICADOR	DESCRIÇÃO
+
+
 
 ![requisitos nao funcionais](https://github.com/brendaadao/praticas-profissionais/blob/master/01.PNG)
 
@@ -34,6 +40,7 @@ IDENTIFICADOR	DESCRIÇÃO
 
 
 # Caso de Uso
+
 
 ![caso de uso](https://github.com/brendaadao/praticas-profissionais/blob/master/usecase.png)
 
