@@ -27,9 +27,9 @@ IDENTIFICADOR	DESCRIÇÃO
 
 IDENTIFICADOR	DESCRIÇÃO
 
-![requisitos nao funcionais](https://github.com/brendaadao/praticas-profissionais/blob/master/image%20(2).png)
+![requisitos nao funcionais](https://github.com/brendaadao/praticas-profissionais/blob/master/01.PNG)
 
-![requisitos nao funcionais](https://github.com/brendaadao/praticas-profissionais/blob/master/image%20(3).png)
+
 
 
 
