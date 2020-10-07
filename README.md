@@ -58,6 +58,8 @@ IDENTIFICADOR	DESCRIÇÃO
 
 
 # Caso de Uso
+
+![caso de uso](https://github.com/brendaadao/praticas-profissionais/blob/master/usecase.png)
  
  
  
