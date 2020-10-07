@@ -30,7 +30,7 @@ IDENTIFICADOR	DESCRIÇÃO
 
 ![requisitos funcionais](https://github.com/brendaadao/praticas-profissionais/blob/master/image.png)
 
-# Requisitos Não Funcionais
+## Requisitos Não Funcionais
 
 
 IDENTIFICADOR	DESCRIÇÃO
