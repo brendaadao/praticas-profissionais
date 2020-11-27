@@ -1016,11 +1016,11 @@
 }
 
 .teal-text.text-lighten-2 {
-  color: #4db6ac !important;
+  color: #FFA036 !important;
 }
 
 .teal.lighten-1 {
-  background-color: #26a69a !important;
+  background-color: #FFA036 !important;
 }
 
 .teal-text.text-lighten-1 {
@@ -2721,7 +2721,10 @@ i.large {
 img.responsive-img,
 video.responsive-video {
   max-width: 100%;
-  height: auto;
+  height: 4rem;
+  position: relative;
+  left: 15rem;
+
 }
 
 .pagination li {
