@@ -1,8 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script type="text/javascript">
+    function recuperarServicos() {
+        var xmlhttp = new XMLHttpRequest();
+    
+        xmlhttp.onreadystatechange = function() {
+            if (xmlhttp.readyState == XMLHttpRequest.DONE ) {
+               if (xmlhttp.status == 200) {
+                   console.log(JSON.parse(this.responseText));
+               }
+               else if (xmlhttp.status == 400) {
+                  alert('There was an error 400');
+               }
+               else {
+                   alert('something else other than 200 was returned');
+               }
+            }
+        };
+    
+        xmlhttp.open("GET", "https://maridoaluguel.herokuapp.com/recuperarServicos", true);
+        xmlhttp.send();
+    }
+    </script>
+
+<script type="text/javascript">
+  function cadastrarServicos(nome, preco, desc) {
+      var xmlhttp = new XMLHttpRequest();
+      xmlhttp.open("POST", "https://maridoaluguel.herokuapp.com/cadastrarServico", true);
+      xmlhttp.setRequestHeader("Content-type", "application/json");
+
+      xmlhttp.onreadystatechange = function() {
+          if (xmlhttp.readyState == XMLHttpRequest.DONE ) {
+             if (xmlhttp.status == 200) {
+                 console.log(JSON.parse(this.responseText));
+             }
+             else if (xmlhttp.status == 400) {
+                alert('There was an error 400');
+             }
+             else {
+                 alert('something else other than 200 was returned');
+             }
+          }
+      };
+
+      this.nome = nome
+      this.preco = preco
+      this.desc = desc
+
+      var parameters = {
+        "nome": this.nome,
+        "preco": this.preco,
+        "descricao": this.desc
+      };
+      xmlhttp.send(JSON.stringify(parameters));
+  }
+  </script>
+
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <script src="js/teste.js"></script>
   <title>Marido de Aluguel</title>
 
   <!-- CSS  -->
@@ -18,7 +75,9 @@
       <ul class="right hide-on-med-and-down">
         <li><a href="#">Serviços</a></li>
       </ul>
-
+  <button onclick=recuperarServicos()></button>
+  <button onclick="cadastrarServicos( 'nome' , 1 , 'aaaaa' )"></button>
+  
       <ul id="nav-mobile" class="sidenav">
         <li><a href="#">Serviços</a></li>
         <li><a href="#">Sobre nós</a></li>
@@ -57,8 +116,7 @@
             <h2 class="center brown-text"><i class="material-icons">phone_iphone</i></h2>
             <h5 class="center">Solicite o serviço do Marido de Aluguel</h5>
 
-            <p class="light">Para solicitar o serviço do Marido de Aluguel é simples. Pode ser realizado através do site, para acessar o formulário basta
-              clicar <a>aqui</a>.</p>
+            <p class="light">Para solicitar o serviço do Marido de Aluguel é simples. Basta se cadastrar no site e aproveitar os serviços disponíveis!
           </div>
         </div>
 
@@ -89,11 +147,11 @@
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+          <h5 class="header col s12 light">Nossos serviços são realizados por pessoas autônomas que se dispoem a ajudar o próximo com suas habilidades gerais</h5>
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="background2.jpg" alt="Unsplashed background img 2"></div>
+    <div class="parallax"><img src="background5.jpg" alt="Unsplashed background img 2"></div>
   </div>
 
   <div class="container">
@@ -103,7 +161,8 @@
         <div class="col s12 center">
           <h3><i class="mdi-content-send brown-text"></i></h3>
           <h4>Contact Us</h4>
-          <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+          <p class="left-align light">Entre em contato conosco pelo nosso e-mail: maridodealuguel@atendimento.com, ou pelo número de telefone: 0800 800 800.
+          </p>
         </div>
       </div>
 
@@ -115,11 +174,11 @@
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+          <h5 class="header col s12 light">BOTA OS MACHO PRA TRABAIÁ</h5>
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="background3.jpg" alt="Unsplashed background img 3"></div>
+    <div class="parallax"><img src="background4.jpg" alt="Unsplashed background img 3"></div>
   </div>
 
   <footer class="page-footer teal">
